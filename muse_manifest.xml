@@ -1,0 +1,44 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="mutantsoftware.com" resolutions="1x" timestamp="1538529653718">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="4028447764" ref="index"/>
+    <file name="nomq_index.css" crc="25553286" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="bitsumishi.woff" crc="3804183427"/>
+    <file name="bitsumis.eot" crc="4078321143"/>
+    <file name="bitsumishi.svg" crc="3890938883"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="340535759" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="310584261" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index"/>
+    <file name="webpro.js" crc="4059564322" ref="index"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u1035.php" crc="4120160655" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="39568856" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="mutantsoftware-favicon.ico" crc="52603523" ref="index"/>
+    <file name="msoft_highres.jpg" crc="348035947" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sundog_logo_hd.png" crc="394741717" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="sundog_logo_hd-u1465-fr.png" crc="118452515" ref="index"/>
+    <file name="msoft_highres-u609-fr.jpg" crc="3962958562" ref="index"/>
+    <file name="sundog_logo_hd-u1465-fr2.png" crc="59117555" ref="index"/>
+    <file name="msoft_highres-u609-fr2.jpg" crc="150885480" ref="index"/>
+    <file name="sundog_logo_hd-u1465-fr3.png" crc="33437382" ref="index"/>
+  </folder>
+  <file name="index.html" crc="54885366" seo="true" mt="1538527872987" redirect="true"/>
+</manifest>
