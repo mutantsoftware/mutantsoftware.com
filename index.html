@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #000000 !important;
+      }
+    }
+	.fading
+	{
+		opacity: 0;
+	}
+	.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+
+
+  </style>
+</head>
+
+<body class="black">
+
+  <!-- Full Page Intro -->
+  <div class="container d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="text-center grey-text mt-5">
+		
+		<h1 class="rounded img-fluid mx-auto d-block text-hide"
+		  style="background-image: url('img/msoft_highres.jpg'); width: 843px; height: 562px;"> Mutant Software
+		 </h1>
+
+        <p class="h2 d-none d-md-block fading">
+          - PRESENTS -
+        </p>
+      </div>
+      <!-- Content -->
+
+  </div>
+  <!-- Full Page Intro -->
+
+  <!--Main layout-->
+  <main>
+    <div class="container mt-5 d-flex justify-content-center align-items-center grey-text text-center">
+
+      <!--Section: Main info-->
+      <section class="mt-5">
+	  
+	  <h1 class="img-fluid mx-auto d-block text-hide fading"
+		  style="background-image: url('img/sundog_logo_hd.png'); width: 589px; height: 413px;" id="sunDogLogo"> Sun Dog
+		 </h1>
+
+	  <p class="h3 mt-5 d-none d-md-block fading" id="doubleText">
+           <strong>An Abstract Adventure Beyond Space And Time</strong>
+        </p>
+		
+		<!-- Button trigger modal-->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalYT">View Trailer</button>
+
+		<!--Modal: modalYT-->
+		<div class="modal fade black" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		  aria-hidden="true">
+		  <div class="modal-dialog modal-lg black" role="document">
+
+			<!--Content-->
+			<div class="modal-content black">
+
+			  <!--Body-->
+			  <div class="modal-body black mb-0 p-0" >
+
+				<div class="embed-responsive embed-responsive-16by9 black mt-5" id="yt-player">
+				  <iframe class="embed-responsive-item black" id="trailerVideo" src="https://www.youtube.com/embed/A3PDXmYoF5U?enablejsapi=1"
+					allowfullscreen></iframe>
+				</div>
+			  </div>
+			</div>
+			<!--/.Content-->
+
+		  </div>
+		</div>
+		<!--Modal: modalYT-->
+				
+		
+      </section>
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer font-small mt-4 wow fadeIn Deep-purple darken-4">
+  
+    <!--Call to action-->
+    <div class="subscribe wow fadeInUp">
+		<form class="form-inline" role="form" action="php/subscribe.php" method="post">
+			<div class="form-group">
+				<label class="sr-only" for="subscribe-email">Email address</label>
+				<input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
+			</div>
+			<button type="submit" class="btn">Subscribe</button>
+		</form>
+	 
+		<div class="success-message"></div>
+		<div class="error-message"></div>
+	</div>
+    <!--/.Call to action-->
+
+    <!-- Social icons -->
+    <div class="pb-4 text-center">
+
+      <a href="https://twitter.com/mutantsoftware" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+	  <a href="https://www.reddit.com/user/mutantsoftware" target="_blank">
+        <i class="fab fa-reddit-alien mr-3"></i>
+      </a>
+	  <a href="https://www.reddit.com/user/mutantsoftware" target="_blank">
+        <i class="fas fa-at mr-3"></i>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+      © 2019 Mutant Software
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    wow = new WOW({
+    boxClass: 'wow', // default
+    animateClass: 'animated', // default
+    offset: 300, // default
+    mobile: true, // default
+    live: true, // default
+	})
+	wow.init();
+	
+	
+	
+	/*
+ * @author       Rob W (http://stackoverflow.com/a/7513356/938089
+ * @description  Executes function on a framed YouTube video (see previous link)
+ *               For a full list of possible functions, see:
+ *               http://code.google.com/apis/youtube/js_api_reference.html
+ * @param String frame_id The id of (the div containing) the frame
+ * @param String func     Desired function to call, eg. "playVideo"
+ * @param Array  args     (optional) List of arguments to pass to function func*/
+function callPlayer(frame_id, func, args) {
+    if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id;
+    var iframe = document.getElementById(frame_id);
+    if (iframe && iframe.tagName.toUpperCase() != 'IFRAME') {
+        iframe = iframe.getElementsByTagName('iframe')[0];
+    }
+    if (iframe) {
+        // Frame exists, 
+        iframe.contentWindow.postMessage(JSON.stringify({
+            "event": "command",
+            "func": func,
+            "args": args || [],
+            "id": frame_id
+        }), "*");
+    }
+}
+
+
+	
+$(document).ready(function(){
+  $("#modalYT").on('hidden.bs.modal', function(){
+	callPlayer('yt-player', 'stopVideo');
+  });
+  
+  $('.subscribe form').submit(function(e) {
+		e.preventDefault();
+		var postdata = $('.subscribe form').serialize();
+		$.ajax({
+			type: 'POST',
+			url: 'php/subscribe.php',
+			data: postdata,
+			dataType: 'json',
+			success: function(json) {
+				if(json.valid == 0) {
+				//alert("success");
+					$('.success-message').hide();
+					$('.error-message').hide();
+					$('.error-message').html(json.message);
+					$('.error-message').fadeIn('fast', function(){
+						$('.subscribe form').addClass('animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+							$(this).removeClass('animated shake');
+						});
+					});
+				}
+				else {
+				//alert("failure");
+					$('.error-message').hide();
+					$('.success-message').hide();
+					$('.subscribe form').hide();
+					$('.success-message').html(json.message);
+					$('.success-message').fadeIn('fast', function(){
+						$('.top-content').backstretch("resize");
+					});
+				}
+			}
+		});
+	});
+});
+
+
+$(document).scroll(function(e){
+
+	$('.fading').each(function(i,obj){
+
+	var target = $(obj);
+	var targetHeight = target.position().top + (target.height() * 0.5);
+	var windowCenterY = ($(window).height() * 0.5)+window.scrollY;
+	var fadeLength = Math.min(target.height()*4, 300);
+	var fadePos = (windowCenterY - targetHeight) / fadeLength;
+	
+	if(fadePos >= 0 && target.is('#sunDogLogo'))
+		target.css('opacity', 1);
+	else
+	{
+		var doubleFlip = false;
+		if(target.is('#doubleText'))
+		{
+			if(fadePos > 1)
+			{
+				doubleFlip = true;
+				target.html("Comming Soon To Your Mobile Device");
+			}
+			else
+				target.html("An Abstract Adventure Beyond Space And Time");
+		}
+		
+		var scrollPercent = Math.abs((windowCenterY - targetHeight) / fadeLength);
+		scrollPercent = (doubleFlip)? scrollPercent - 1 : 1 - scrollPercent;
+		scrollPercent = Math.min(1, Math.max(0, scrollPercent));
+		target.css('opacity', scrollPercent);
+	}
+	
+	});
+});
+
+  </script>
+</body>
+
+</html>
