@@ -209,12 +209,13 @@ $(document).ready(function(){
   $('.subscribe form').submit(function(e) {
 		e.preventDefault();
 		var postdata = $('.subscribe form').serialize();
+		jQuery.support.cors = true;
 		$.ajax({
 			type: 'POST',
 			url: 'php/subscribe.php',
 			data: postdata,
 			dataType: 'json',
-			contentType: "application/json",
+			contentType: "application/json; charset=utf-8",
 			success: function(json) {
 				if(json.valid == 0) {
 					$('.success-message').hide();
