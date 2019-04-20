@@ -208,7 +208,7 @@ $(document).ready(function(){
   
   $('.subscribe form').submit(function(e) {
 		e.preventDefault();
-		var postdata = $('.subscribe form').serialize() + '&ajax=true';
+		var postdata = $('.subscribe form').serialize();// + '&ajax=true';
 		$.ajax({
 			type: 'POST',
 			url: '/assets/subscribe.php',

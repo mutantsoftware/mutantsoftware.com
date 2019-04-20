@@ -15,7 +15,7 @@ if($_POST) {
     $mailchimp_list_id = 'e4e3898dea'; // enter your MailChimp List ID
     // ****
   
-    $subscriber_email = addslashes( trim( $_GET['email'] ) );
+    $subscriber_email = addslashes( trim( $_POST['email'] ) );
   
     if( !isEmail($subscriber_email) ) {
         $array = array();
@@ -30,7 +30,7 @@ if($_POST) {
          
         $result = $MailChimp->post("lists/$mailchimp_list_id/members", [
                 'email_address' => $subscriber_email,
-                'status'        => 'pending',
+                'status'        => 'subscribed'
         ]);
           
         if($result == false) {
