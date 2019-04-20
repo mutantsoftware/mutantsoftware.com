@@ -209,11 +209,9 @@ $(document).ready(function(){
   $('.subscribe form').submit(function(e) {
 		e.preventDefault();
 		var postdata = $('.subscribe form').serialize();
-		//$('#doubleText').css('opacity', 1).html(postdata);
-		jQuery.support.cors = true;
 		$.ajax({
 			type: 'POST',
-			url: 'assets/subscribe.php',
+			url: '/assets/subscribe.php',
 			data: postdata,
 			dataType: 'json',
 			contentType: "application/json; charset=utf-8",
