@@ -15,7 +15,7 @@ if($_POST) {
     $mailchimp_list_id = 'e4e3898dea'; // enter your MailChimp List ID
     // ****
   
-    $subscriber_email = addslashes( trim( $_POST['email'] ) );
+    $subscriber_email = addslashes( trim( $_GET['email'] ) );
   
     if( !isEmail($subscriber_email) ) {
         $array = array();
