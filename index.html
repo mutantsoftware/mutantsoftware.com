@@ -36,7 +36,6 @@
 
 
   </style>
-  <?php include 'php/subscribe.php';?>
 </head>
 
 <body class="black">
@@ -215,6 +214,7 @@ $(document).ready(function(){
 			url: 'php/subscribe.php',
 			data: postdata,
 			dataType: 'json',
+			contentType: "application/json",
 			success: function(json) {
 				if(json.valid == 0) {
 					$('.success-message').hide();
