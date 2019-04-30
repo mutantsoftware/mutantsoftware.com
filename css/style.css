@@ -1,23 +1,53 @@
-/* Required height of parents of the Full Page Intro and Intro itself */
-html,
-body,
+html,body {
+font-family:'Open Sans Condensed', sans-serif;
+background-color:#000;
+}
+
 .view {
-  height: 100%;}
-  
-/* Navbar animation */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.2); }
+min-height:1800px;
+}
 
-.top-nav-collapse {
-  background-color: #1C2331; }
+.title {
+color:#f9f9f9;
+font-size:3em;
+}
 
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #1C2331; } }
+.fading {
+opacity:0;
+}
 
-/* Footer color for sake of consistency with Navbar */
-.page-footer {
-  background-color: #000000; }
-  /* animate the elements which are visible immediately after page load */
-  
+.phone-graphic {
+width:315px;
+height:640px;
+background:transparent url(../assets/Phone.png) no-repeat 0 0;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+}
+
+.teaser-video {
+width:270px;
+height:480px;
+margin-top:90px;
+margin-left:30px;
+}
+
+.sub-btn {
+margin-left:35px;
+}
+
+.page-footer,.page-footer a {
+color:#ddd;
+background-color:#111;
+}
+
+a {
+text-decoration:none;
+}
+
+.footer-copyright {
+color:#2a2a2a;
+padding-left:35px;
+background-color:#0f0f0f;
+}
