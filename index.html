@@ -90,37 +90,37 @@
 		<script src="https://app.mailjet.com/statics/js/widget.modal.js"></script>
 		<!-- Initializations -->
 		<script>
-		$(document).scroll(function(e){
+		$(document).scroll(function(e)
+        {
+			$('.fading').each(function(i,obj)
+            {
+                var target = $(obj);
+                var targetHeight = target.position().top + (target.height() * 0.5);
+                var windowCenterY = ($(window).height() * 0.5)+window.scrollY;
+                var fadeLength = Math.min(target.height() * 2, 200);
+                var fadePos = (windowCenterY - targetHeight) / fadeLength;
 
-			$('.fading').each(function(i,obj){
+                if(fadePos >= 0 && (target.is('#sunDogLogo') || target.is('#phone')))
+                    target.css('opacity', 1);
+                else
+                {
+                    var doubleFlip = false;
+                    if(target.is('#doubleText'))
+                    {
+                        if(fadePos > 1)
+                        {
+                            doubleFlip = true;
+                            target.html("Coming To Your Mobile Device");
+                        }
+                        else
+                            target.html("An Abstract Adventure Beyond Space And Time");
+                    }
 
-			var target = $(obj);
-			var targetHeight = target.position().top + (target.height() * 0.5);
-			var windowCenterY = ($(window).height() * 0.5)+window.scrollY;
-			var fadeLength = Math.min(target.height()*2, 200);
-			var fadePos = (windowCenterY - targetHeight) / fadeLength;
-			
-			if(fadePos >= 0 && (target.is('#sunDogLogo') || target.is('#phone')))
-				target.css('opacity', 1);
-			else
-			{
-				var doubleFlip = false;
-				if(target.is('#doubleText'))
-				{
-					if(fadePos > 1)
-					{
-						doubleFlip = true;
-						target.html("Coming To Your Mobile Device");
-					}
-					else
-						target.html("An Abstract Adventure Beyond Space And Time");
-				}
-				
-				var scrollPercent = Math.abs((windowCenterY - targetHeight) / fadeLength);
-				scrollPercent = (doubleFlip)? scrollPercent - 1 : 1 - scrollPercent;
-				scrollPercent = Math.min(1, Math.max(0, scrollPercent));
-				target.css('opacity', scrollPercent);
-			}
+                    var scrollPercent = Math.abs((windowCenterY - targetHeight) / fadeLength);
+                    scrollPercent = (doubleFlip)? scrollPercent - 1 : 1 - scrollPercent;
+                    scrollPercent = Math.min(1, Math.max(0, scrollPercent));
+                    target.css('opacity', scrollPercent);
+                }
 			
 			});
 		});
