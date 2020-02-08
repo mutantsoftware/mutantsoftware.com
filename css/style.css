@@ -10,7 +10,7 @@ overflow-x: hidden;
 
 .title {
 color:#f9f9f9;
-font-size:3em;
+font-size: calc(100% + 3vw);
 }
 
 .fading {
@@ -53,3 +53,4 @@ color:#2a2a2a;
 padding-left:0px;
 background-color:#0f0f0f;
 }
+
