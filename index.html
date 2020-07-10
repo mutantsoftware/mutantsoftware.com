@@ -93,6 +93,7 @@
         {
             const centerHeight = ($(window).height() * 0.5) - ($('#MutantSoftware').height() * 0.5);
             $('.view').css('margin-top', centerHeight+'px');
+            $('html').animate({scrollTop: '0px'}, 0);
         });
 		$(document).scroll(function(e)
         {
